@@ -7,8 +7,8 @@ import torch
 
 # Config that serves all environment
 GLOBAL_CONFIG = {
-    "MODEL_PATH": "../model/model.pt",
-    "SCALAR_PATH": "../model/scaler.joblib",
+    "MODEL_PATH": "../models/model.pt",
+    "SCALAR_PATH": "../models/scaler.joblib",
     "USE_CUDE_IF_AVAILABLE": True,
     "ROUND_DIGIT": 6
 }

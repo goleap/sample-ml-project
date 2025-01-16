@@ -23,7 +23,7 @@ COPY ./requirements.txt .
 RUN pip3 --timeout=300 --no-cache-dir install -r requirements.txt
 
 # Copy model files
-COPY ./model /model
+COPY ./models /model
 
 # Copy app files
 COPY ./app /app

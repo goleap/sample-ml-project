@@ -1,0 +1,27 @@
+[project]
+name = "app"
+dynamic = ["version"]
+readme = "README.md"
+license = "GPL-3.0-or-later"
+license-files = ["LICEN[CS]E*", "vendored/licenses/*.txt", "AUTHORS.md"]
+requires-python = ">= 3.10"
+
+[tool.poetry]
+version = "1.0"  # base version
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+gunicorn = "23.0.0"
+uvicorn = "0.34.0"
+fastapi = "0.115.6"
+pandas = "2.2.3"
+numpy = "2.2.1"
+scikit-learn = "1.6.1"
+jieba = "0.42.1"
+pytest = "8.3.4"
+pytest-html = "4.1.1"
+torch = "2.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

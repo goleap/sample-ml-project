@@ -3,24 +3,20 @@
 
 import os
 import sys
-import traceback
-from joblib import load
-
-import uvicorn
-from fastapi import FastAPI, Request, status
-from fastapi.logger import logger
-from fastapi.encoders import jsonable_encoder
-from fastapi.responses import RedirectResponse, JSONResponse
-from fastapi.exceptions import RequestValidationError
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 
 import torch
+import uvicorn
+from fastapi import FastAPI, Request
+from fastapi.exceptions import RequestValidationError
+from fastapi.logger import logger
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from joblib import load
 
-from model import Model
-from predict import predict
 from config import CONFIG
 from exception_handler import validation_exception_handler, python_exception_handler
+from model import Model
+from predict import predict
 from schema import *
 
 # Initialize API Server

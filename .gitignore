@@ -66,3 +66,6 @@ scratch/
 .DS_Store
 docker-compose.yml
 docker-compose.override.yml
+
+.idea
+.venv
