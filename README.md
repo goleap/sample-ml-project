@@ -8,3 +8,11 @@ The model used is trained for classification on Iris Flower Dataset, from this b
 ## Guide
 Detailed explaination can be found in this Medium article: 
 https://medium.com/@mingc.me/deploying-pytorch-model-to-production-with-fastapi-in-cuda-supported-docker-c161cca68bb8
+
+## Setup
+```
+pipx install poetry
+python3 -m venv .venv
+source .venv/bin/activate
+poetry install
+```
